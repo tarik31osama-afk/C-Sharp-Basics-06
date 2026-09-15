@@ -10,6 +10,14 @@
 
             #endregion
 
+            #region 2nd q
+
+            int[,] shelfCopies = { { 3, 5 }, { 1, 4 } };
+
+            Console.WriteLine(shelfCopies[1,0]);
+
+            #endregion
+
         }
     }
 }
