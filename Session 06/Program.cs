@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             #region 1st q
-            double[] Prices = { 25.5, 40.0, 33.75 };
+            double[] Prices = { 25.5, 40.0 };
             Console.WriteLine(Prices[1]);
 
             #endregion
@@ -77,6 +77,19 @@
             Console.WriteLine(page);
             AddBonusPage(ref page);
             Console.WriteLine(page);
+
+            #endregion
+
+            #region 8th q
+
+            static void ReplaceArray(ref double[] prices)
+            {
+                prices=new double [] { 10.0, 12.5, 15.0 };
+
+            }
+            Console.WriteLine(Prices.Length);
+            ReplaceArray(ref Prices);
+            Console.WriteLine(Prices.Length);
 
             #endregion
         }
