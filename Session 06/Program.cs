@@ -49,7 +49,20 @@
             AddBonusPages(pages);
             Console.WriteLine(pages);
             /*the value of pages still 400 becuase the parameter is passed by value so the method work on copy object not the original */
-         
+
+            #endregion'
+
+            #region 6th q
+
+            static void ApplyDiscount(double[] prices)
+            {
+                prices[0] -= 5;
+            }
+            double[] prices = { 25.5, 40.0 };
+            Console.WriteLine(prices[0]);
+            ApplyDiscount(prices);
+            Console.WriteLine(prices[0]);
+
             #endregion
         }
     }
