@@ -92,6 +92,26 @@
             Console.WriteLine(Prices.Length);
 
             #endregion
+
+            #region 9th 
+
+            static bool TryGetPrice(string title, out double price1)
+            {
+                if(title!="clean code")
+                {
+                    price1 = 0;
+                    return false; ;
+
+                }
+                price1 = 25;
+                return true;
+                  
+            }
+            double result;
+            TryGetPrice("clean code", out result);
+            Console.WriteLine(result);
+
+            #endregion
         }
     }
 }
