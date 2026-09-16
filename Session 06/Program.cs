@@ -103,7 +103,7 @@
                     return false; ;
 
                 }
-                price1 = 25;
+                price1 = 25.5;
                 return true;
                   
             }
@@ -128,7 +128,17 @@
 
             PrintBookInfo(pages: 600, title: "clean code2");
 
+            #endregion
 
+            #region 12th q
+
+            static void PrintAllTitles(params string[] titles)
+            {
+                for (int i = 0; i < titles.Length; i++) {
+                    Console.WriteLine($"the book title is : { titles[i]}");
+                 }
+            }
+            PrintAllTitles("clean code", "c# basics", "python");
             #endregion
         }
     }
