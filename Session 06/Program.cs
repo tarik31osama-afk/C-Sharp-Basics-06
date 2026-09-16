@@ -27,6 +27,16 @@
 
             PrintWelcomeMessage();
             #endregion
+
+            #region 4th q
+
+            static void PrintBookTitle(string title)
+            {
+                Console.WriteLine($"Book title : {title}");
+
+            }
+            PrintBookTitle("Clean Code");
+            #endregion
         }
     }
 }
